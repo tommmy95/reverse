@@ -17,11 +17,17 @@ class CurrentTime extends React.Component {
     console.log("hi my dears")
   }
   startFunc = () => {
-    if(this.state.number > 0){
+    if (this.state.number > 0 && flag === false) {
       counter = setInterval(() => {
-        this.setState({
-          number: this.state.number - 1
-        })
+        setTimeout(() => {
+          flag = true
+          console.log(flag)
+          this.setState({
+            number: this.state.number - 1
+          })
+          flag = false
+          console.log(flag)
+        }, 1000)
       }, 1000)
     }
   }

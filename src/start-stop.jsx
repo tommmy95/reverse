@@ -25,5 +25,3 @@ class StartStop extends React.Component {
     }
 }
 export { StartStop }
-{/* <button onClick={this.setState({continueFalag :!this.state.continueFalag})}>start</button>
-<button onClick={this.setState({continueFalag :!this.state.continueFalag})}>stop</button> */}

@@ -17,7 +17,7 @@ class StartStop extends React.Component {
         }
     }
     flagState = () => {
-        flag === false ? flag = true : flag = false
+        return (flag === false ? flag = true : flag = false)
         console.log(flag)
     }
     render(){
